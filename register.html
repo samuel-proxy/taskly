@@ -32,7 +32,26 @@
     </ul>
   </nav>
 <main>
+<form class="signup-form" action="#" method="post">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email"
+         placeholder="you@example.com" required>
 
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password"
+         placeholder="At least 8 characters" minlength="8" required>
+
+  <label for="confirm">Confirm password</label>
+  <input type="password" id="confirm" name="confirm"
+         placeholder="Re-enter your password" minlength="8" required>
+
+  <label class="terms">
+    <input type="checkbox" name="terms" required>
+    I agree to use Taskly responsibly
+  </label>
+
+  <button type="submit">Sign Up</button>
+</form>
 </main>
 <aside>
 <h2>Notices</h2>
@@ -50,7 +69,7 @@
     </ul>
 </aside>
 <footer>
-     <p>Taskly, PO Box 4021, Ngong.</p>
+     <p>Taskly, PO Box 4021, Nairobi.</p>
     <p>Site built by <em>Samuel Musyoka & David Nderitu</em>,
        DBT Year 1, 2026.</p>
 </footer>
